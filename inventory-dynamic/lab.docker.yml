@@ -1,0 +1,8 @@
+---
+plugin: community.docker.docker_containers
+
+groups:
+  webservers: docker_name in ['web1', 'web2']
+  dbservers: docker_name == 'db1'
+
+strict: false
